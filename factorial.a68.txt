@@ -1,0 +1,26 @@
+# Read input #
+print("Enter a non-negative integer: ");
+INT n;
+read(n);
+
+# Recursive factorial function #
+PROC fact_rec = (INT x)INT:
+    IF x = 0 THEN 1 ELSE x * fact_rec(x - 1) FI;
+
+# Iterative factorial function #
+PROC fact_iter = (INT x)INT:
+(
+    INT result := 1;
+    FOR i FROM 1 TO x DO
+        result := result * i
+    OD;
+    result
+);
+
+# Compute factorials #
+INT factorial_rec := fact_rec(n);
+INT factorial_iter := fact_iter(n);
+
+# Print results correctly #
+print("Factorial using recursion: "); print(factorial_rec); newline;
+print("Factorial using iteration: "); print(factorial_iter); newline;
