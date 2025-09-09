@@ -139,4 +139,4 @@ This repository is for **educational purposes**. You may freely use, modify, and
 
 ## ScreenShot
 
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot.png)
